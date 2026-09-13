@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>오늘의 한 가지</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1>오늘의 한 가지</h1>
+
+    <p>오늘 내가 할 일 하나는?</p>
+
+    <input type="text" id="taskInput" placeholder="할 일을 입력하세요">
+    <button onclick="showTask()">시작하기</button>
+
+    <h2 id="task"></h2>
+
+    <script>
+        function showTask() {
+            const input = document.getElementById("taskInput");
+            const task = document.getElementById("task");
+
+            task.textContent = input.value;
+        }
+    </script>
+</body>
+</html>
